@@ -1,7 +1,6 @@
 import {
     SET_RECENT_POSTS
-} from "../actions/typos";
-import { Switch } from "react-router";
+} from "../actions/types";
 
 const INIT_STATE = {
     post: [],
@@ -11,8 +10,11 @@ const INIT_STATE = {
 export default function(state = INIT_STATE, action) { 
     switch (action.type) {
         case SET_RECENT_POSTS:
-            
-            return {...state.recentPosts.action.payload};
+            const recentPosts = action.payload
+            return {
+                ...state, 
+                recentPosts
+            };
     
         default:
             return state;
