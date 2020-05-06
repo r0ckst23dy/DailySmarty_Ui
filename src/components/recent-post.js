@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 
 import * as actions from '../actions';
 
-import SearchBar from './search-bar';
+import Post from "./post";
 
 class RecentPost extends Component {
 
@@ -16,9 +16,7 @@ class RecentPost extends Component {
         const posts = this.props.recentPosts.map((post, index) => {
             if ( index < 3) {
                 return (
-                    <li key={index}>
-                        {post.title}
-                    </li>
+                    <Post {...post} key={index}/>
                 )
         }
         })
