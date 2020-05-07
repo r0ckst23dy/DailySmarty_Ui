@@ -39,10 +39,14 @@ body {
     
     @import "./search-bar.scss";
 
-    
+    @import "./recent-posts"
 }
 
-
+ul { 
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
 
 .app {
     margin-top: 2rem;
