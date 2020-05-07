@@ -28,11 +28,21 @@ body {
     width:66vw;
     display: grid;
     align-content: space-around;
-    justify-items: center;
+    justify-items: stretch;
+
+    .logo-main,
+    .recent-posts { 
+        display: grid;
+        justify-items: center;
+    }
+    
+    
+    @import "./search-bar.scss";
+
+    
 }
 
 
-@import "./search-bar.scss";
 
 .app {
     margin-top: 2rem;
