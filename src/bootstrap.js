@@ -22,7 +22,7 @@ function main() {
         <Switch>
             <Route path='/' exact component={Home}/>
             <Route path='/results' component={Results}/>
-        </Switch>>
+        </Switch>
       </BrowserRouter>
     </Provider>,
     document.querySelector(".app-wrapper")
