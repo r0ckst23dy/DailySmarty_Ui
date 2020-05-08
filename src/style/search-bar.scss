@@ -11,8 +11,6 @@
             box-shadow: 2px 3px 28px 3px rgba(0, 0, 0, 0.1);
             border: none;
             border-radius: 5px;
-            height:  58px;
-            font-size: 40px;
             transition: 0.2s ease-in-out;
     
             &::placeholder { 
@@ -36,3 +34,23 @@
 
 
 }
+
+.search-bar__home {
+    align-content: center;
+    justify-items: center;
+
+    input {
+        height: 118px;
+        font-size: 40px;
+    }
+}
+
+.search-bar__results {
+    align-content: start;
+    justify-items: center;
+
+    input {
+        font-size: 22px;
+        height: 36px;
+    }
+} 
