@@ -1,7 +1,51 @@
 .results { 
-    @include default-page-layout();
+    height: 100vh;
+    width: 66vw;
+    display: grid;
+    margin-top: 52px;
+    grid-row-gap: 44px;
+}
 
-    
+
+.results-posts {
+
+
+    .results-posts-wrapper{
+
+        .results-posts-posts{
+            display: grid;
+            grid-row-gap: 21px;
+            justify-content: stretch;
+        }
+    }
+
+}
+
+.result-posts { 
+    display: grid;
+    align-content: space-around;
+    grid-row-gap: 21px;
+
+    .result-post-topics > * { 
+        color: #0079ff;
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: normal;
+    }
+
+    .result-post-title a {
+        color: #666666;
+        font-size: 18px;
+        font-weight: normal;
+        line-height: 23px;
+        text-emphasis: none;
+    }
+
+    .result-post-links  { 
+      
+    }
+
+
 }
 
 
