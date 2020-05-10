@@ -32,7 +32,9 @@ class Post extends Component {
         }
         if(link.includes('.htm')) { 
             link = link.substring(0, link.length - 5);
-        }        
+        }     
+        
+
         return link;
     }
     renderLinks() {
@@ -47,6 +49,9 @@ class Post extends Component {
                 </div>
             </div>);
         })
+        if( links == 0) { 
+            return <div className="no-content">No Post Links</div>;
+        }        
         return links
     }
 
@@ -60,8 +65,6 @@ class Post extends Component {
                     <div className="recent-post-associated-topics">
                         {this.rendorTopics()}
                     </div>
-                
-
                 </li>
             );
         } else if(this.props.type == 'result') {
