@@ -11,14 +11,16 @@
 
         .recent-posts__heading { 
             color: #0078FF;
-            font-size: 14;
+            font-size: 14px;
         }
 
         .recent-posts__posts { 
             display: grid;
-            justify-content: space-evenly;
             grid-gap: 42px;
-            grid-template-columns: 1fr 1fr 1fr;
+            @media screen and (min-width: 700px) {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+            font-size: 14px;
         }
     }
 }
